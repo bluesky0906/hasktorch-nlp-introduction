@@ -1,6 +1,7 @@
 # hasktorch-nlp-introduction
 
 TODO - add description about this repository
+どういう人向けなのか、必要な前提知識
 
 ## Prerequirements
  - Docker
