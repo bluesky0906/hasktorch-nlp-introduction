@@ -7,4 +7,4 @@ In this lecture, we start with a very basic [supervised machine learning](https:
 We'll introduce the basics of machine learning and hasktorch through model building.
 
 ## 1.　Understand Linear Regression
-[LinearRegression](file://./LinearRegression.ipynb)
+[LinearRegression]upda(file://./LinearRegression.ipynb)

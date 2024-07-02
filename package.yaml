@@ -21,6 +21,12 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- hasktorch
+- bytestring
+- jsonl
+- aeson
+- utf8-string
+- containers
 
 ghc-options:
 - -Wall
@@ -37,15 +43,25 @@ library:
   source-dirs: src
 
 executables:
-  hasktorch-nlp-introduction-exe:
-    main:                Main.hs
-    source-dirs:         app
+  day6:
+    main:                amazonReview.hs
+    source-dirs:         Day6
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
     - hasktorch-nlp-introduction
+  day5-bow:
+    main:                bow.hs
+    source-dirs:         Day5
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hasktorch-nlp-introduction
+
 
 tests:
   hasktorch-nlp-introduction-test:
