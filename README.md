@@ -4,7 +4,7 @@ TODO - add description about this repository
 どういう人向けなのか、必要な前提知識
 
 ## Prerequirements
- - Docker
+ - [Docker](https://docs.docker.com/get-docker/)
  - (Optional) Install [hasktorch based on your environment](https://github.com/hasktorch/hasktorch)
    - Recommned adding `$LD_LYBRARY_PATH`/`$DYLD_LIBRARY_PATH` set by [setenv](https://github.com/hasktorch/hasktorch/blob/master/setenv) to your `.bashrc`
 

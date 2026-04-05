@@ -6,6 +6,8 @@ RUN stack upgrade
 RUN stack --version
 RUN stack setup
 
+RUN sudo apt update -y && sudo apt install -y gnuplot
+
 RUN mkdir libraries
 RUN mv ./hasktorch ./inline-c ./dist-newstyle ./libraries/
 
@@ -21,4 +23,3 @@ RUN cabal v1-install /home/ubuntu/libraries/hasktorch/hasktorch /home/ubuntu/lib
 
 WORKDIR /home/ubuntu
 RUN cabal v1-install ./libraries/hasktorch-tools ./libraries/nlp-tools --ghc-options "-j1 +RTS -A128m -n2m -RTS"
-

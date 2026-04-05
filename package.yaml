@@ -22,11 +22,16 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - hasktorch
+- hasktorch-tools
+- nlp-tools
 - bytestring
 - jsonl
 - aeson
 - utf8-string
 - containers
+- split
+- cassava
+- vector
 
 ghc-options:
 - -Wall
@@ -43,6 +48,24 @@ library:
   source-dirs: src
 
 executables:
+  day2:
+    main:                LiniearRegression.hs
+    source-dirs:         Day2
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hasktorch-nlp-introduction
+  day3:
+    main:                Titanic-nanako.hs
+    source-dirs:         Day3
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hasktorch-nlp-introduction
   day6:
     main:                amazonReview.hs
     source-dirs:         Day6
